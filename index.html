@@ -1,0 +1,42 @@
+header id="home"><div class="wrap"><div class="bento">
+  <div class="tile t-main">
+    <div><h1>Zehra Jabeen A</h1></div>
+    <div>
+      <p>I’m a <span id="role">student developer</span></p>
+      <div class="hero-btns" style="margin-top:1.2rem">
+        <a class="btn" href="#projects">See my projects</a>
+        <button class="btn ghost" id="resumeBtn">Download resume</button>
+      </div>
+    </div>
+  </div>
+  <div class="tile t-photo" aria-label="Photo placeholder">ZJ</div>
+  <div class="tile stat"><b data-to="12">0</b><p>Projects built</p></div>
+  <div class="tile stat"><b data-to="4">0</b><p>Hackathons joined</p></div>
+  <div class="tile t-learn"><small>Currently learning</small><h3>TypeScript and Next.js</h3><p>Building a small blog to practice.</p></div>
+  <div class="tile t-links"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#contact">Email me</a></div>
+</div></div></header>
+
+<div class="toolbar">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button aria-pressed="true" data-filter="all">All</button><button aria-pressed="false" data-filter="web">Web</button>
+      <button aria-pressed="false" data-filter="python">Python</button><button aria-pressed="false" data-filter="design">Design</button>
+    </div>
+    <input id="search" type="search" placeholder="Search projects" aria-label="Search projects">
+  </div>
+  <div class="grid">
+    <button class="card" data-cat="web" data-title="Study Buddy" data-tech="HTML,CSS,JavaScript" data-desc="A timetable and flashcard web app used by 120 classmates." data-link="#"><div class="thumb"></div><div class="txt"><h3>Study Buddy</h3><span class="tag">Web</span></div></button>
+    <!-- the other project cards follow the same pattern -->
+  </div>
+
+<dialog id="projDialog">
+  <h3 id="dTitle"></h3><p id="dDesc"></p><div class="chips" id="dTech"></div>
+  <a class="btn" id="dLink" href="#">View project</a> <button class="btn ghost" id="dClose">Close</button>
+</dialog>
+
+<form id="form" novalidate>
+    <div><label for="name">Name</label><input id="name" autocomplete="name"><span class="err" id="eName"></span></div>
+    <div><label for="email">Email</label><input id="email" type="email" autocomplete="email"><span class="err" id="eEmail"></span></div>
+    <div><label for="msg">Message <span class="count" id="count">0 / 300</span></label><textarea id="msg" rows="4" maxlength="300"></textarea><span class="err" id="eMsg"></span></div>
+    <button class="btn" type="submit">Send message</button>
+    <p id="ok" hidden>Thanks! Your message is ready to send.</p>
+  </form>
